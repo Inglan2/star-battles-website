@@ -55,11 +55,16 @@ particlesJS("particles-js", {
 });
 
 const swiper = new Swiper(".swiper", {
-  loop: true,
+  // loop: true,
   effect: "cards",
   mousewheel: true,
   autoplay: {
     delay: 1000,
     pauseOnMouseEnter: true
-  }
+  },
+  cardsEffect: {
+    perSlideRotate: 1,
+    perSlideOffset: 10,
+  },
+  grabCursor: true
 });
