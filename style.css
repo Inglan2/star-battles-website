@@ -11,6 +11,7 @@ html {
   color: white;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 canvas {
@@ -35,6 +36,7 @@ h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   margin: 0;
+  font-size: 50px;
 }
 
 #maincontentcontainer {
@@ -57,6 +59,19 @@ h1 {
 }
 
 #swiper {
-  width: 100px;
-  height: 100px;
+  width: 80vw;
+  margin: 30px;
+  max-width: 1000px;
+  transition-duration: 300ms;
+}
+
+#swiper:hover {
+  transform: scale(1.05);
+}
+
+.swiper-slide {
+  background-color: #222222;
+  width: 80vw;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
 }
