@@ -79,6 +79,7 @@ h2 {
   text-align: center;
   /* Fixes layout issue */
   padding: 20px;
+  max-height: calc(100vh - 100px);
 }
 
 /* Bottom bar (with buttons) */
