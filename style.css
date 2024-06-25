@@ -137,3 +137,6 @@ h1 {
 #bottombar>button:hover {
   transform: scale(1.3);
 }
+
+/* Style for about dialog */
+.aboutdialog {}
