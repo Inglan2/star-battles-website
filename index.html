@@ -1,86 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper CSS files -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <!-- My styles -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Star Battles - SMAStudios</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Swiper CSS files -->
-  <link rel="stylesheet" href="swiper-bundle.min.css" />
-  <!-- My styles -->
-  <link rel="stylesheet" href="style.css" />
-  <title>Star Battles - SMAStudios</title>
-</head>
-
-<body>
-  <div id="maincontentcontainer">
-    <!-- Main Content -->
-    <div id="maincontent">
-      SMAStudios
-      <h1>Star Battles</h1>
-      <!-- Image slider -->
-      <div id="swiper">
-        <div class="swiper">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Images -->
-            <div class="swiper-slide" style="background-image: url(imag/title.png); background-size: cover;">
-              <p>Title Screen</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/wave1.png); background-size: cover;">
-              <p>First Wave</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/shoot.png); background-size: cover;">
-              <p>Shooting an enemy ship</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/explod.png); background-size: cover;">
-              <p>Enemy ship exploding</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/laser.png); background-size: cover;">
-              <p>Laser in use</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/boss.png); background-size: cover;">
-              <p>Boss battle</p>
-            </div>
-            <div class="swiper-slide" style="background-image: url(imag/explodboss.png); background-size: cover;">
-              <p>Defeated boss</p>
+  <body>
+    <div id="maincontentcontainer">
+      <!-- Main Content -->
+      <div id="maincontent">
+        SMAStudios
+        <h1>Star Battles</h1>
+        <!-- Image slider -->
+        <div id="swiper">
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Images -->
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/title.png);
+                  background-size: cover;
+                "
+              >
+                <p>Title Screen</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/wave1.png);
+                  background-size: cover;
+                "
+              >
+                <p>First Wave</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/shoot.png);
+                  background-size: cover;
+                "
+              >
+                <p>Shooting an enemy ship</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/explod.png);
+                  background-size: cover;
+                "
+              >
+                <p>Enemy ship exploding</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/laser.png);
+                  background-size: cover;
+                "
+              >
+                <p>Laser in use</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/boss.png);
+                  background-size: cover;
+                "
+              >
+                <p>Boss battle</p>
+              </div>
+              <div
+                class="swiper-slide"
+                style="
+                  background-image: url(imag/explodboss.png);
+                  background-size: cover;
+                "
+              >
+                <p>Defeated boss</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <!-- Bottombar with buttons -->
+      <div id="bottombar">
+        <button
+          onclick="document.getElementById('aboutdialog').classList.remove('hidden')"
+        >
+          <span class="material-symbols-outlined"> info </span>
+          About
+        </button>
+        <button
+          onclick="document.getElementById('playdialog').classList.remove('hidden')"
+        >
+          <span class="material-symbols-outlined"> play_arrow </span>
+          Play
+        </button>
+      </div>
     </div>
-    <!-- Bottombar with buttons -->
-    <div id="bottombar">
-      <button onclick="document.getElementById('aboutdialog').classList.remove('hidden')">
-        <span class=" material-symbols-outlined">
-          info
-        </span>
-        About
+    <div id="aboutdialog" class="hidden">
+      <button
+        class="closebtn"
+        onclick="document.getElementById('aboutdialog').classList.add('hidden')"
+      >
+        <span class="material-symbols-outlined"> close </span>
       </button>
-      <button>
-        <span class="material-symbols-outlined">
-          play_arrow
-        </span>
-        Play
+      <h1>About</h1>
+      <h2>How to play</h2>
+    </div>
+    <div id="playdialog" class="hidden">
+      <button
+        class="closebtn"
+        onclick="document.getElementById('aboutdialog').classList.add('hidden')"
+      >
+        <span class="material-symbols-outlined"> close </span>
       </button>
     </div>
-  </div>
-  <div id="aboutdialog" class="hidden">
-    <button class="closebtn" onclick="document.getElementById('aboutdialog').classList.add('hidden')">
-      <span class="material-symbols-outlined">
-        close
-      </span>
-    </button>
-    <h1>About</h1>
-    <h2>How to play</h2>
-  </div>
-  <!-- Javascript -->
-  <div id="particles-js"></div>
-  <!-- Swiper JS -->
-  <script src="swiper-bundle.min.js"></script>
-  <!-- Particles.js -->
-  <script src="particles.min.js"></script>
-  <!-- My script -->
-  <script src="script.js"></script>
-</body>
-
+    <!-- Javascript -->
+    <div id="particles-js"></div>
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+    <!-- Particles.js -->
+    <script src="particles.min.js"></script>
+    <!-- My script -->
+    <script src="script.js"></script>
+  </body>
 </html>
