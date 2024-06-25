@@ -94,7 +94,7 @@ h2 {
   margin: 30px;
   /* Prevent it from being too big */
   max-width: 1000px;
-  max-height: 90vh;
+  max-height: 90vh !important;
   transition-duration: 300ms;
 }
 
