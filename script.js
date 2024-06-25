@@ -1,4 +1,6 @@
+// Init particles
 particlesJS("particles-js", {
+  // Particles configuration
   particles: {
     number: { value: 690, density: { enable: true, value_area: 420 } },
     color: { value: "#ffffff" },
@@ -54,17 +56,22 @@ particlesJS("particles-js", {
   retina_detect: true,
 });
 
+// Initialize Swiper
 const swiper = new Swiper(".swiper", {
-  // loop: true,
+  // Cards effects
   effect: "cards",
+  // Mousewheel to switch
   mousewheel: true,
+  // Autoplay
   autoplay: {
     delay: 1000,
     pauseOnMouseEnter: true
   },
+  // Effect config
   cardsEffect: {
     perSlideRotate: 1,
     perSlideOffset: 10,
   },
+  // Grab cursor
   grabCursor: true
 });
