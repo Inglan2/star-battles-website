@@ -157,7 +157,7 @@ h2 {
   z-index: 69;
   padding: 10px;
   transition-duration: 300ms;
-  transition-timing-function: cubic-bezier(1.000, 0.000, 0.000, 1.000);
+  transition-timing-function: cubic-bezier(0.190, 1.000, 0.220, 1.000); 
 }
 
 #aboutdialog.hidden {
