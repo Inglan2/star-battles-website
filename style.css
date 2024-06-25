@@ -139,4 +139,12 @@ h1 {
 }
 
 /* Style for about dialog */
-.aboutdialog {}
+.aboutdialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #222222;
+  z-index: 69;
+}
