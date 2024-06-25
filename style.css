@@ -78,6 +78,23 @@ h1 {
   width: 80vw;
   aspect-ratio: 16/9;
   border-radius: 10px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  text-align: center;
+}
+
+.swiper-slide>p {
+  background-color: #222222;
+  border-radius: 10px;
+  padding: 20px;
+  transition-duration: 300ms;
+}
+
+#swiper:hover .swiper-slide>p {
+  padding: 5px;
+  background-color: #2222228a;
+  transform: translate(0, 10px);
 }
 
 #bottombar>button {
