@@ -145,7 +145,7 @@ h2 {
 }
 
 /* Style for about dialog */
-.aboutdialog {
+#aboutdialog {
   position: fixed;
   top: 0;
   left: 0;
