@@ -50,8 +50,8 @@
     </div>
     <!-- Bottombar with buttons -->
     <div id="bottombar">
-      <button>
-        <span class="material-symbols-outlined">
+      <button onclick="document.getElementById('aboutdialog').classList.remove('hidden')">
+        <span class=" material-symbols-outlined">
           info
         </span>
         About
@@ -64,8 +64,8 @@
       </button>
     </div>
   </div>
-  <div id="aboutdialog">
-    <button class="closebtn" onclick="alert(this)">
+  <div id="aboutdialog" class="hidden">
+    <button class="closebtn" onclick="document.getElementById('aboutdialog').classList.add('hidden')">
       <span class="material-symbols-outlined">
         close
       </span>
