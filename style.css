@@ -180,3 +180,8 @@ h2 {
   color: white;
   cursor: pointer;
 }
+
+.dialog#playdialog>iframe {
+  width: 100%;
+  height: 100%;
+}
