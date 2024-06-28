@@ -159,6 +159,11 @@ h2 {
   z-index: 69;
   padding: 10px;
   transition-duration: 300ms;
+  font-size: 20px;
+}
+
+.dialog>h2 {
+  font-size: 30px;
 }
 
 .dialog.hidden {
